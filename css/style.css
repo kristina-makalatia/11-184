@@ -1,0 +1,85 @@
+/* header styles */
+/* 
+
+
+
+
+/* responsive min width */
+.box {
+    width: 150px;
+    height: 150px;
+}
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: yellow;
+}
+.box3 {
+    background-color: blue;
+}
+.box4 {
+    background-color: pink;
+}
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+@media (min-width: 375px) and (max-width:768px) {
+    .flex-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+}
+
+@media (min-width:768px){
+    .box {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+/* form styles */
+.form-wraper {
+    display: flex;
+    flex-direction: column;
+}
+.form-element {
+    max-width: 700px;
+    width: 100%;
+}
+.input-element {
+    height: 60px;
+    margin: 15px 0;
+    /* border:none; */
+    /* border-bottom: 1px solid red; */
+    /* border-radius: 25px; */
+    outline: none;
+}
+.btn-submit {
+    background-color: yellow;
+    border: none;
+}
+.input-element[type="password"] {
+    /* background-color: lightblue; */
+}
+.select-form {
+    height: 60px;
+}
+.textarea-element {
+    height: 200px;
+    resize: none;
+    outline: none;
+}
